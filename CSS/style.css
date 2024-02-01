@@ -1,0 +1,71 @@
+body {
+    color: white;
+    height: 100vh;
+    max-width: 100%;
+    min-height: 300px;
+    gap: 50px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: Black;
+    font-family: 'Poppins', sans-serif;
+}
+
+div {
+    height: 70px;
+    overflow: hidden;
+    transform: scale(3);
+}
+
+.container {
+    transform: translateX(-100px);
+    transform: scale(3);
+}
+
+h1 {
+    font-size: 3em;
+    transform: translateY(70px);
+}
+
+.hello {
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background-image: linear-gradient(45deg, #ffffff, #000000);
+    animation-name: slideUp;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in;
+}
+
+.world {
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background-image: linear-gradient(45deg, #1d1227, #8000ff);
+    animation-name: slideUp;
+    animation-duration: 1.5s;
+    animation-delay: .7s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in;
+}
+
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(70px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(-30px)
+    }
+}
